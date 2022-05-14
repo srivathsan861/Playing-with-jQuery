@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>first jquery</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+	<p> dummy </p>
+
+	<div>
+	</div>
+
+<script type="text/javascript">
+	$('p').html("srivathsan");
+
+$('div').css({
+	height:"100px",
+	width:"100px",
+	backgroundColor: "red",
+});
+
+var a = $('div');
+
+a.click(function(){
+	var elem = $(this);
+	elem.width(elem.width() + 10 + 'px');
+});
+</script>
+</body>
+</html>
